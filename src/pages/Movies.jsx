@@ -9,6 +9,8 @@ const Movies = () => {
   const movieId = searchParams.get('movieId') ?? '';
   // useEffect(() => {HTTP},[]);
 
+  console.log(setMovies); //для того, что деплоилось, функционал никакой
+
   const updateQueryString = evt => {
     const movieIdVaue = evt.target.value;
     if (movieIdVaue === '') {
